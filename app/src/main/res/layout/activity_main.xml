@@ -1,0 +1,139 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background"
+        android:gravity="center"
+        android:padding="16dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                app:lottie_rawRes="@raw/animation"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_marginBottom="50dp"/>
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite uma mensagem"
+                android:inputType="textMultiLine"
+                android:background="@drawable/rounded_corner"
+                android:gravity="top|start"
+                android:minLines="3"
+                android:maxLines="7"
+                android:scrollbars="vertical"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="22sp"
+                />
+
+            <EditText
+                android:id="@+id/numberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite um número: DDD+999999999"
+                android:inputType="number"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/rounded_corner"
+                android:padding="18dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/generateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                android:text="Gerar mensagem e enviar via WhatsApp"
+                android:textSize="20sp"
+                app:strokeColor="#03345A"
+                app:strokeWidth="3dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Limpar"
+                    android:textSize="11sp"
+                    android:id="@+id/botaoLimpar"
+                    android:layout_margin="20dp"/>
+
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usar mensagem padrão"
+                android:textStyle="bold"
+                android:layout_below="@id/defaultMessageEditText"
+                android:layout_margin="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensagem Padrão:"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+
+                />
+
+            <EditText
+                android:id="@+id/defaultMessageEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Digite uma mensagem padrão (será salva automaticamente)"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounded_corner"
+                android:gravity="top|start"
+                android:minLines="1"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:padding="10dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
