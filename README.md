@@ -42,7 +42,7 @@ The app builds a WhatsApp deep link for the number you provide and opens WhatsAp
 
 ---
 
-##Privacy
+## Privacy
 
 No contacts are read or modified.
 
@@ -50,7 +50,7 @@ No messages are stored or sent by the app itself; it only passes data to WhatsAp
 
 ---
 
-##Disclaimer
+## Disclaimer
 
 This project is an independent utility and is not endorsed by or associated with WhatsApp/Meta.
 Use responsibly and follow WhatsApp’s Terms of Service and local regulations.
